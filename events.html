@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Our Latest Events - Ureha Marketing Pvt. Ltd.</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .topbar {
+      background: #f5f5f5;
+      padding: 6px 20px;
+      font-size: 13px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav {
+      background: #1a1a2e;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 0;
+    }
+
+    .nav-logo img {
+      height: 60px;
+    }
+
+    .nav-logo-text h1 {
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-logo-text p {
+      color: #aaa;
+      font-size: 11px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 18px 15px;
+      color: #ccc;
+      text-decoration: none;
+      font-size: 14px;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #f5c518;
+      border-bottom: 3px solid #f5c518;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .page-header {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .page-header h2 {
+      font-size: 28px;
+    }
+
+    .page-header p {
+      color: #f5c518;
+      margin-top: 6px;
+      font-size: 14px;
+    }
+
+    .section {
+      padding: 45px 40px;
+    }
+
+    .section h2 {
+      font-size: 23px;
+      color: #1a1a2e;
+      border-left: 4px solid #f5c518;
+      padding-left: 12px;
+      margin-bottom: 18px;
+    }
+
+    .section p {
+      line-height: 1.8;
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      background: #1a1a2e;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+
+    footer span {
+      color: #f5c518;
+    }
+  </style>
+  <style>
+    .sec-title {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .sec-title h3 {
+      font-size: 14px;
+      color: #f5c518;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .sec-title h2 {
+      font-size: 26px;
+      color: #1a1a2e;
+      margin-top: 5px;
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .event-card {
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .event-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .event-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .event-card-body {
+      padding: 15px;
+    }
+
+    .event-card-body h5 {
+      font-size: 15px;
+      color: #1a1a2e;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .event-card-body p {
+      font-size: 13px;
+      color: #777;
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+
+    .read-more {
+      display: inline-block;
+      background: #f5c518;
+      color: #1a1a2e;
+      padding: 7px 18px;
+      font-size: 13px;
+      font-weight: bold;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .read-more:hover {
+      background: #e6b800;
+    }
+
+    .dark-sec {
+      background: #1a1a2e;
+      color: white;
+      padding: 45px 40px;
+      margin-top: 10px;
+    }
+
+    .dark-sec h2 {
+      font-size: 23px;
+      border-left: 4px solid #f5c518;
+      padding-left: 12px;
+      margin-bottom: 18px;
+      color: white;
+    }
+
+    .dark-sec p {
+      line-height: 1.8;
+      font-size: 15px;
+      color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar"><b>Email:</b> urehamarketing@gmail.com &nbsp;|&nbsp; <b>Mob:</b> 9415405531, 7607351562
+    &nbsp;</div>
+  <nav>
+    <div class="nav-logo"><img src="Logo.png" alt="UMPL">
+      <div class="nav-logo-text">
+        <h1>UREHA MARKETING PVT. LTD.</h1>
+        <p>Village Pethia, Tanda, Ambedkar Nagar, U.P.</p>
+      </div>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="gallery.html">Our Gallery</a></li>
+      <li><a href="events.html" class='active'>Our Latest Events</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="page-header">
+    <h2>Our Latest Events</h2>
+    <p>Stay updated with our latest activities and programs</p>
+  </div>
+  <div class="section">
+    <div class="sec-title">
+      <h3>Our Events</h3>
+      <h2>Latest Event &amp; News</h2>
+    </div>
+    <div class="events-grid">
+      <div class="event-card">
+        <img src="e1.jpg" alt="Annual Business Meet">
+        <div class="event-card-body">
+          <h5>NUkkad Program</h5>
+          <p>A Nukkad Program (Nukkad Natak) is a type of street play performed in public places like streets, markets,
+            Ambedkar Nagar.....</p>
+          <a href="event1.html" target="_blank" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="e2.jpg" alt="Awareness Program">
+        <div class="event-card-body">
+          <h5>Awareness Program</h5>
+          <p>An Awareness Program is an event organized to educate people about important social, health, or.....</p>
+          <a href="event2.html" target="_blank" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="e3.jpg" alt="Placement In Banglore">
+        <div class="event-card-body">
+          <h5>Placement In Banglore</h5>
+          <p>Placement in Bangalore refers to the process where students get job opportunities in companies located in.....</p>
+          <a href="event3.html" target="_blank" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="e5.jpg" alt="Placement In Banglore">
+        <div class="event-card-body">
+          <h5>Certificate Distribution</h5>
+          <p>Certificate Distribution is an event organized to give certificates to participants who successfully complete a.....</p>
+          <a href="event4.html" target="_blank" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="img4.jpeg" alt="Ureha Marketing Pvt. Ltd.">
+        <div class="event-card-body">
+          <h5>Ureha Marketing Pvt. Ltd.</h5>
+          <p>Village Pethia, Tanda, District Ambedkar Nagar – 224190 (Uttar Pradesh) is a rural location in the.....</p>
+          <a href="event5.html" target="_blank" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <img src="img3.jpeg" alt="Ureha Marketing Pvt. Ltd.">
+        <div class="event-card-body">
+          <h5>Ureha Marketing Pvt. Ltd.</h5>
+          <p>Village Pethia, Tanda, District Ambedkar Nagar – 224190 (Uttar Pradesh) is a rural location in the.....</p>
+          <a href="event6.html" target="_blank" class="read-more">Read More</a>
+        </div>
+      </div>
+
+
+      <div class="event-card">
+        <img src="img2.jpeg" alt="Ureha Marketing Pvt. Ltd.">
+        <div class="event-card-body">
+          <h5>Ureha Marketing Pvt. Ltd.</h5>
+          <p>Village Pethia, Tanda, District Ambedkar Nagar – 224190 (Uttar Pradesh) is a rural location in the.....</p>
+          <a href="event7.html" target="_blank" class="read-more">Read More</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <div class="dark-sec">
+    <h2>TOWARDS BUSINESS EXCELLENCE</h2>
+    <p>Ureha Marketing Pvt. Ltd. (UMPL) has been consistently organizing events and programs to serve and empower its
+      clients and the wider business community across Uttar Pradesh. Our events reflect our commitment to transparency,
+      growth, and community development.</p>
+  </div>
+  <footer>
+    <p>Copyright &copy; 2025 <span>Ureha Marketing Pvt. Ltd.</span> | All Rights Reserved</p>
+    <p style="margin-top:6px;">Village Pethia, Tanda, Ambedkar Nagar, U.P.</p>
+  </footer>
+</body>
+
+</html>

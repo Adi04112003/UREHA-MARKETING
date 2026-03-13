@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Our Gallery - Ureha Marketing Pvt. Ltd.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .topbar {
+            background: #f5f5f5;
+            padding: 6px 20px;
+            font-size: 13px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav {
+            background: #1a1a2e;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 0;
+        }
+
+        .nav-logo img {
+            height: 60px;
+        }
+
+        .nav-logo-text h1 {
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .nav-logo-text p {
+            color: #aaa;
+            font-size: 11px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 18px 15px;
+            color: #ccc;
+            text-decoration: none;
+            font-size: 14px;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #f5c518;
+            border-bottom: 3px solid #f5c518;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .page-header h2 {
+            font-size: 28px;
+        }
+
+        .page-header p {
+            color: #f5c518;
+            margin-top: 6px;
+            font-size: 14px;
+        }
+
+        .section {
+            padding: 45px 40px;
+        }
+
+        .section h2 {
+            font-size: 23px;
+            color: #1a1a2e;
+            border-left: 4px solid #f5c518;
+            padding-left: 12px;
+            margin-bottom: 18px;
+        }
+
+        .section p {
+            line-height: 1.8;
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+        }
+
+        footer span {
+            color: #f5c518;
+        }
+    </style>
+    <style>
+        .ggrid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .gitem {
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gitem img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .gitem:hover img {
+            transform: scale(1.04);
+        }
+
+        .gcap {
+            background: #1a1a2e;
+            color: #f5c518;
+            text-align: center;
+            padding: 8px;
+            font-size: 13px;
+        }
+
+        .placeholder {
+            background: #eee;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #999;
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topbar"><b>Email:</b> urehamarketing@gmail.com &nbsp;|&nbsp; <b>Mob:</b> 9415405531, 7607351562
+        &nbsp;</div>
+    <nav>
+        <div class="nav-logo"><img src="Logo.png" alt="UMPL">
+            <div class="nav-logo-text">
+                <h1>UREHA MARKETING PVT. LTD.</h1>
+                <p>Village Pethia, Tanda, Ambedkar Nagar, U.P.</p>
+            </div>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html" class='active'>Our Gallery</a></li>
+            <li><a href="events.html">Our Latest Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="page-header">
+        <h2>Our Gallery</h2>
+        <p>Photos from our office and operations</p>
+    </div>
+    <div class="section">
+        <h2>PHOTO GALLERY</h2>
+        <div class="ggrid">
+            <div class="gitem"><img src="g1.jpg" alt="Office Gate">
+                <div class="gcap">Office Gate</div>
+            </div>
+
+            <div class="gitem"><img src="g2.jpg" alt="Office Gate">
+                <div class="gcap">Machinery</div>
+            </div>
+            <div class="gitem"><img src="g3.jpg" alt="Office Gate">
+                <div class="gcap">Machinery</div>
+            </div>
+
+            <div class="gitem"><img src="g4.jpg" alt="Office Gate">
+                <div class="gcap">Machinery</div>
+            </div>
+
+            <div class="gitem"><img src="g5.jpg" alt="Office Gate">
+                <div class="gcap">Machinery</div>
+            </div>
+
+            <div class="gitem"><img src="g6.jpg" alt="Office Gate">
+                <div class="gcap">Machinery</div>
+            </div>
+
+            <div class="gitem"><img src="g7.jpeg" alt="Office Gate">
+                <div class="gcap">Machinery</div>
+            </div>
+
+            <div class="gitem"><img src="g8.jpeg" alt="Office Gate">
+                <div class="gcap">Machinery</div>
+            </div>
+
+
+            <div class="gitem"><img src="e1.jpg" alt="Office Gate">
+                <div class="gcap">Nukkad Program</div>
+            </div>
+
+            <div class="gitem"><img src="e2.jpg" alt="Office Gate">
+                <div class="gcap">Awareness Program</div>
+            </div>
+            <div class="gitem"><img src="e4.jpg" alt="Office Gate">
+                <div class="gcap">Awareness Program</div>
+            </div>
+
+            <div class="gitem"><img src="e5.jpg" alt="Office Gate">
+                <div class="gcap">Certificate Distribution</div>
+            </div>
+
+            <div class="gitem"><img src="e6.jpg" alt="Office Gate">
+                <div class="gcap">Machinery</div>
+            </div>
+
+            <div class="gitem"><img src="e7.jpg" alt="Office Gate">
+                <div class="gcap">Class Room</div>
+            </div>
+            <!-- ///////////////////////////////////// -->
+
+
+            <div class="gitem"><img src="img1.jpeg" alt="Office Gate">
+                <div class="gcap">Ureha Marketing Pvt. Ltd.</div>
+            </div>
+
+            <div class="gitem"><img src="img2.jpeg" alt="Office Gate">
+                <div class="gcap">Ureha Marketing Pvt. Ltd.</div>
+            </div>
+
+            <div class="gitem"><img src="img3.jpeg" alt="Office Gate">
+                <div class="gcap">Ureha Marketing Pvt. Ltd.</div>
+            </div>
+
+            <div class="gitem"><img src="img4.jpeg" alt="Office Gate">
+                <div class="gcap">Ureha Marketing Pvt. Ltd.</div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2025 <span>Ureha Marketing Pvt. Ltd.</span> | All Rights Reserved</p>
+        <p style="margin-top:6px;">Village Pethia, Tanda, Ambedkar Nagar, U.P.</p>
+    </footer>
+</body>
+
+</html>
